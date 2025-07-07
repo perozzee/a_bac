@@ -1,5 +1,6 @@
 import express from "express";
-import { verify } from "jsonwebtoken";
+import { verifyToken } from "../middlewares/authentication.js";
+import { updateProject, viewProject } from "../controllers/projectController.js";
 
 const router = express.Router();
 

@@ -1,10 +1,10 @@
 import jwt from "jsonwebtoken";
-import { jwtSecret } from "../config/env";
+import { jwtSecret } from "../config/env.js";
 
 const user = {
-    id: 2,
-    name: "John",
-    role: "admin",
+    id: 1,
+    name: "Paul",
+    role: "manager",
     department: "IT",
     accessLevel: 4
 };

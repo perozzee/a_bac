@@ -8,7 +8,11 @@ const app = express();
 app.use(express.json());
 
  //routes
-app.use("/api/projects", projectRoutes);
+app.get('/', (req, res) => {
+  res.send('Welcome to A_BAC API');
+});
+
+app.use("/api/project", projectRoutes);
 
 //error middleware
 app.use(errorHandler);
